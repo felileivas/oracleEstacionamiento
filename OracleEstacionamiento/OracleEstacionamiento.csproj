@@ -124,6 +124,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="formularioActualizar.aspx" />
+    <Content Include="formularioEliminar.aspx" />
     <Content Include="formularioRegistro.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeAdmin.aspx" />
@@ -230,6 +231,13 @@
     </Compile>
     <Compile Include="formularioActualizar.aspx.designer.cs">
       <DependentUpon>formularioActualizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formularioEliminar.aspx.cs">
+      <DependentUpon>formularioEliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formularioEliminar.aspx.designer.cs">
+      <DependentUpon>formularioEliminar.aspx</DependentUpon>
     </Compile>
     <Compile Include="formularioRegistro.aspx.cs">
       <DependentUpon>formularioRegistro.aspx</DependentUpon>

@@ -21,11 +21,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="HomeAdmin.aspx">Pagina principal Administrador</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="formularioActualizar.aspx">Actualizar usuario <span class="sr-only">(actual)</span></a>
+      </li>
+                <li class="nav-item">
+        <a class="nav-link" href="formularioEliminar.aspx">Elimnar usuario<span class="sr-only">(actual)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,10 +45,10 @@
 </nav>
 
     <form id="form1" class="form-group d-block" runat="server">
-        <asp:Button ID="Button1" runat="server" class="btn btn-info btn-lg btn-block" OnClick="Button1_Click" Text="Refrescar BD" />
+        <asp:Button ID="Button1" runat="server" class="btn btn-warning btn-lg btn-block" OnClick="Button1_Click" Text="Refrescar BD" />
         <div class="table d-flex flex-column">
             
-            <asp:GridView ID="dgvUsuarios" class="table-responsive" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="dgvUsuarios" class="table-responsive" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="dgvUsuarios_SelectedIndexChanged">
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

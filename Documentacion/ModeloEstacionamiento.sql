@@ -152,6 +152,22 @@ v_password := passwrd;
         raise;
 end;
 
+--PROCEDURE PARA BORRAR UN USUARIO
+
+create or replace procedure borrarUsuario (
+iduser in NUMBER)
+is
+v_id NUMBER;
+
+BEGIN
+    v_id := iduser;
+    delete from usuario where ID_USUARIO = v_id; 
+end;
+
+
+
+--
+
 
 
 

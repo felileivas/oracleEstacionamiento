@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="formularioActualizar.aspx.cs" Inherits="OracleEstacionamiento.formularioActualizar" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="formularioEliminar.aspx.cs" Inherits="OracleEstacionamiento.formularioEliminar" %>
 
 <!DOCTYPE html>
 
@@ -27,10 +27,10 @@
       <li class="nav-item">
         <a class="nav-link" href="HomeAdmin.aspx">Pagina principal Administrador</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="formularioActualizar.aspx">Actualizar usuario<span class="sr-only">(actual)</span></a>
       </li>
-                <li class="nav-item">
+        <li class="nav-item active">
         <a class="nav-link" href="formularioEliminar.aspx">Eliminar usuario<span class="sr-only">(actual)</span></a>
       </li>
       <li class="nav-item dropdown">
@@ -53,23 +53,10 @@
     <form id="form1" class="form" runat="server">
         <div>
             <br>
-            <asp:TextBox ID="txtId_update" class="form-control"  placeholder="Ingrese id que se actualizara" runat="server"></asp:TextBox>
-            <asp:Button ID="btnRegistro" class="btn btn-lg btn-primary btn-block" runat="server" OnClick="Button1_Click" Text="Actualizar usuario" />
+            <asp:TextBox ID="txtId_delete" class="form-control"  placeholder="Ingrese id que se eliminara" runat="server"></asp:TextBox>
+            <asp:Button ID="btnDelete" class="btn btn-danger btn-lg btn-primary btn-block" runat="server" OnClick="Button1_Click" Text="Eliminar usuario" />
         </div>
-        <p>
-            <br>
-            <asp:TextBox ID="txtNombre_update" class="form-control"  placeholder="Nombre" runat="server"></asp:TextBox>
-            <br>
-            <asp:TextBox ID="txtRut_update" class="form-control"  placeholder="RUT" runat="server"></asp:TextBox>
-            <br>
-            <asp:TextBox ID="txtDireccion_update" class="form-control"  placeholder="Direccion" runat="server"></asp:TextBox>
-            <br>
-            <asp:TextBox ID="txtTelefono_update" class="form-control"  placeholder="Telefono" runat="server"></asp:TextBox>
-            <br>
-            <asp:TextBox ID="txtUsuario_update" class="form-control"  placeholder="Nombre de usuario" runat="server"></asp:TextBox>
-            <br>
-            <asp:TextBox ID="txtPass_update" class="form-control"  placeholder="Contraseña" runat="server"></asp:TextBox>
-        </p>
+
         
     </form>
 

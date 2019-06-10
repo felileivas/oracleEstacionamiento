@@ -34,5 +34,10 @@ namespace OracleEstacionamiento
             dgvUsuarios.DataBind();
             conexion.Close();
         }
+
+        protected void dgvUsuarios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
