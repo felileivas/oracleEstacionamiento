@@ -52,22 +52,22 @@
     <form id="form1" class="form" runat="server">
         <div>
             <br>
-            <asp:TextBox ID="txtId" class="form-control"  placeholder="Ingrese id que se actualizara" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtId_update" class="form-control"  placeholder="Ingrese id que se actualizara" runat="server"></asp:TextBox>
             <asp:Button ID="btnRegistro" class="btn btn-lg btn-primary btn-block" runat="server" OnClick="Button1_Click" Text="Actualizar usuario" />
         </div>
         <p>
             <br>
-            <asp:TextBox ID="txtNombre" class="form-control"  placeholder="Nombre" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtNombre_update" class="form-control"  placeholder="Nombre" runat="server"></asp:TextBox>
             <br>
-            <asp:TextBox ID="txtRut" class="form-control"  placeholder="RUT" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtRut_update" class="form-control"  placeholder="RUT" runat="server"></asp:TextBox>
             <br>
-            <asp:TextBox ID="txtDireccion" class="form-control"  placeholder="Direccion" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtDireccion_update" class="form-control"  placeholder="Direccion" runat="server"></asp:TextBox>
             <br>
-            <asp:TextBox ID="txtTelefono" class="form-control"  placeholder="Telefono" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtTelefono_update" class="form-control"  placeholder="Telefono" runat="server"></asp:TextBox>
             <br>
-            <asp:TextBox ID="txtUsuario" class="form-control"  placeholder="Nombre de usuario" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtUsuario_update" class="form-control"  placeholder="Nombre de usuario" runat="server"></asp:TextBox>
             <br>
-            <asp:TextBox ID="txtPass" class="form-control"  placeholder="Contraseña" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtPass_update" class="form-control"  placeholder="Contraseña" runat="server"></asp:TextBox>
         </p>
         
     </form>

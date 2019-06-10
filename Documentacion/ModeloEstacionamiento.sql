@@ -119,24 +119,38 @@ dire in VARCHAR2,
 tel in VARCHAR2, 
 usu in VARCHAR2,
 passwrd in VARCHAR2)
-AS
-v_id NUMBER := iduser;
-v_nombre VARCHAR2(50) := nom;
-v_rut VARCHAR2(50) := rt;
-v_direccion VARCHAR2(50) := dire;
-v_telefono VARCHAR2(50) := tel;
-v_usuario VARCHAR2(50) := usu;
-v_password VARCHAR2(20) := passwrd;
+is
+v_id NUMBER;
+v_nombre VARCHAR2(50); 
+v_rut VARCHAR2(50);
+v_direccion VARCHAR2(50);
+v_telefono VARCHAR2(50);
+v_usuario VARCHAR2(50);
+v_password VARCHAR2(20);
 
-begin
-    update usuario set 
-    nombre = v_nombre,
-    rut = v_rut,
-    direccion = v_direccion,
-    telefono = v_telefono,
+BEGIN
+v_id := iduser;
+v_nombre  := nom;
+v_rut := rt;
+v_direccion := dire;
+v_telefono := tel;
+v_usuario := usu;
+v_password := passwrd;
+
+    update USUARIO set 
+    NOMBRE = v_nombre,
+    RUT = v_rut,
+    DIRECCION = v_direccion,
+    TELEFONO = v_telefono,
     USUARIO_LOGIN = v_usuario,
-    PASS_LOGIN = v_password where ID_USUARIO = iduser; 
-end actualizarUsuario;
+    PASS_LOGIN = v_password
+    where ID_USUARIO = v_id; 
+    exception
+        when NO_DATA_FOUND then
+        null;
+        when OTHERS then
+        raise;
+end;
 
 
 
