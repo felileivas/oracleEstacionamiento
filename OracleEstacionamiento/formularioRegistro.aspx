@@ -49,8 +49,7 @@
     <hr />
     <form id="form1" class="form" runat="server">
         <div>
-            <asp:TextBox ID="txtId" class="form-control"  placeholder="Ingrese el ID que quiere actualizar" runat="server"></asp:TextBox>
-            <asp:Button ID="btnRegistro" class="btn btn-lg btn-primary btn-block" runat="server" OnClick="Button1_Click" Text="Actualizar usuario" />
+            <asp:Button ID="btnRegistro" class="btn btn-success btn-primary btn-block" runat="server" OnClick="Button1_Click" Text="Agregar usuario" />
         </div>
         <p>
             <br>
